@@ -45,8 +45,8 @@ function Barreiras(altura, largura, abertura, espaco, notificarPonto) {
         new ParDeBarreiras(altura, abertura, largura + espaco),
         new ParDeBarreiras(altura, abertura, largura + espaco * 2),
         new ParDeBarreiras(altura, abertura, largura + espaco * 3)
-    ]
-    const deslocamento = 3
+    ];
+    const deslocamento = 3;
     this.animar = () => {
         this.pares.forEach(par => {
             par.setX(par.getX() - deslocamento);
